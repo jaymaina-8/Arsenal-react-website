@@ -1,30 +1,64 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-content">
         <div className="footer-section">
-          <h3>Arsenal FC</h3>
-          <p>The official Arsenal Football Club website.</p>
+          <div className="footer-logo">
+            <img 
+              src="/images/arsenal-fc-seeklogo.png" 
+              alt="Arsenal FC Logo" 
+              className="footer-logo-img"
+            />
+            <span className="footer-logo-text">Arsenal FC</span>
+          </div>
+          <p className="footer-description">
+            Arsenal Football Club - North London's Premier Football Club since 1886
+          </p>
+          <div className="footer-social">
+            <a href="#" className="social-link">📘</a>
+            <a href="#" className="social-link">📱</a>
+            <a href="#" className="social-link">🐦</a>
+            <a href="#" className="social-link">📺</a>
+          </div>
         </div>
+        
         <div className="footer-section">
-          <h4>Quick Links</h4>
+          <h3>Club</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/news">News</a></li>
+            <li><Link to="/about">About Arsenal</Link></li>
+            <li><Link to="/history">History</Link></li>
+            <li><Link to="/stadium">Emirates Stadium</Link></li>
+            <li><Link to="/honours">Honours</Link></li>
           </ul>
         </div>
+        
         <div className="footer-section">
-          <h4>Contact</h4>
-          <p>Email: info@arsenal.com</p>
-          <p>Phone: +44 20 7619 5003</p>
+          <h3>Team</h3>
+          <ul>
+            <li><Link to="/team">First Team</Link></li>
+            <li><Link to="/staff">Coaching Staff</Link></li>
+            <li><Link to="/academy">Academy</Link></li>
+            <li><Link to="/women">Women's Team</Link></li>
+          </ul>
+        </div>
+        
+        <div className="footer-section">
+          <h3>Fans</h3>
+          <ul>
+            <li><Link to="/tickets">Tickets</Link></li>
+            <li><Link to="/membership">Membership</Link></li>
+            <li><Link to="/shop">Official Shop</Link></li>
+            <li><Link to="/fanzone">Fan Zone</Link></li>
+          </ul>
         </div>
       </div>
+      
       <div className="footer-bottom">
-        <p>&copy; 2025 Arsenal FC. All rights reserved.</p>
+        <p>&copy; 2024 Arsenal Football Club. All rights reserved.</p>
       </div>
     </footer>
   );

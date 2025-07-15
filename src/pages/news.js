@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { newsArticles, getNewsByCategory, getLatestNews } from '../data/news';
+import { newsArticles, getNewsByCategory, getLatestNews } from '../data/newsArticles';
 
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
