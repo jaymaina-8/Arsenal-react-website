@@ -1,8 +1,8 @@
 export const players = [
   // 🧤 Goalkeepers
-  { id: 1, name: "David Raya", position: "Goalkeeper", age: 29, nationality: "Spain", number: 22, photoUrl: "/images/players/david_raya.jpg", bio: "Calm distributor from Brentford, signed permanently in 2024.", joinDate: "2024-07-04", previousClub: "Brentford" },
-  { id: 2, name: "Kepa Arrizabalaga", position: "Goalkeeper", age: 30, nationality: "Spain", number: 13, photoUrl: "/images/players/kepa.jpg", bio: "Experienced stopper from Chelsea, brought in July 2025.", joinDate: "2025-07-01", previousClub: "Chelsea" },
-  { id: 3, name: "Karl Hein", position: "Goalkeeper", age: 23, nationality: "Estonia", number: 31, photoUrl: "/images/players/karl_hein.jpg", bio: "Tall academy shot-stopper providing future depth.", joinDate: "2019-05-09", previousClub: "Arsenal Academy" },
+  { id: 1, name: "David Raya", position: "Goalkeeper", age: 29, nationality: "Spain", number: 22, photoUrl: "/images/RAYA_Headshot_web_njztl3wr.avif", bio: "Calm distributor from Brentford, signed permanently in 2024.", joinDate: "2024-07-04", previousClub: "Brentford" },
+  { id: 2, name: "Kepa Arrizabalaga", position: "Goalkeeper", age: 30, nationality: "Spain", number: 13, photoUrl: "/images/kepa-headshot_srzo1469.avif", bio: "Experienced stopper from Chelsea, brought in July 2025.", joinDate: "2025-07-01", previousClub: "Chelsea" },
+  { id: 3, name: "Karl Hein", position: "Goalkeeper", age: 23, nationality: "Estonia", number: 31, photoUrl: "/images/Hein_1.avif", bio: "Tall academy shot-stopper providing future depth.", joinDate: "2019-05-09", previousClub: "Arsenal Academy" },
 
   // 🛡️ Defenders
   { id: 4, name: "William Saliba", position: "Defender", age: 24, nationality: "France", number: 2, photoUrl: "/images/SALIBA_Headshot_web_khl9z1vw.avif", bio: "Rock‑solid CB, one of Europe's top young defenders.", joinDate: "2019-07-25", previousClub: "Saint-Étienne" },
@@ -15,24 +15,22 @@ export const players = [
   { id: 11, name: "Myles Lewis‑Skelly", position: "Defender", age: 18, nationality: "England", number: 49, photoUrl: "/images/LEWIS-SKELLY_Headshot_web_cewuwnp9.avif", bio: "Academy full‑back compared to Ashley Cole.", joinDate: "2024-07-01", previousClub: "Arsenal Academy" },
 
   // 🎯 Midfielders
-  { id: 15, name: "Declan Rice", position: "Midfielder", age: 26, nationality: "England", number: 41, photoUrl: "/images/players/rice.jpg", bio: "Midfield general, club record signing from West Ham.", joinDate: "2023-07-15", previousClub: "West Ham United" },
-  { id: 16, name: "Martin Ødegaard", position: "Midfielder", age: 26, nationality: "Norway", number: 8, photoUrl: "/images/players/odegaard.jpg", bio: "Captain and creative heartbeat since 2021.", joinDate: "2021-08-20", previousClub: "Real Madrid" },
-  { id: 17, name: "Christian Nørgaard", position: "Midfielder", age: 31, nationality: "Denmark", number: 16, photoUrl: "/images/players/norgaard.jpg", bio: "Powerhouse signed from Brentford July 2025.", joinDate: "2025-07-10", previousClub: "Brentford" },
+  { id: 15, name: "Declan Rice", position: "Midfielder", age: 26, nationality: "England", number: 41, photoUrl: "/images/RICE_Headshot_web_ml5vq29g.avif", bio: "Midfield general, club record signing from West Ham.", joinDate: "2023-07-15", previousClub: "West Ham United" },
+  { id: 16, name: "Martin Ødegaard", position: "Midfielder", age: 26, nationality: "Norway", number: 8, photoUrl: "/images/ODEGAARD_Headshot_web_z0tram3m.avif", bio: "Captain and creative heartbeat since 2021.", joinDate: "2021-08-20", previousClub: "Real Madrid" },
+  { id: 17, name: "Christian Nørgaard", position: "Midfielder", age: 31, nationality: "Denmark", number: 16, photoUrl: "/images/norgaard-headshot_drfr227d.avif", bio: "Powerhouse signed from Brentford July 2025.", joinDate: "2025-07-10", previousClub: "Brentford" },
   { id: 18, name: "Martín Zubimendi", position: "Midfielder", age: 26, nationality: "Spain", number: 36, photoUrl: "/images/zubimendi-headshot-47383_j6ngk5a3 (1).jpg", bio: "Composed DM added from Real Sociedad July 2025.", joinDate: "2025-07-06", previousClub: "Real Sociedad" },
-  { id: 19, name: "Mikel Merino", position: "Midfielder", age: 29, nationality: "Spain", number: 23, photoUrl: "/images/players/merino.jpg", bio: "Energetic La Liga box‑to‑box mid since 2024.", joinDate: "2024-08-27", previousClub: "Real Sociedad" },
-  { id: 20, name: "Fábio Vieira", position: "Midfielder", age: 25, nationality: "Portugal", number: 21, photoUrl: "/images/players/vieira.jpg", bio: "Playmaker returning from Porto loan.", joinDate: "2024-07-01", previousClub: "Porto" },
-  { id: 21, name: "Albert Sambi Lokonga", position: "Midfielder", age: 25, nationality: "Belgium", number: 28, photoUrl: "/images/players/lokonga.jpg", bio: "Loan returner from Sevilla, midfield depth.", joinDate: "2023-07-01", previousClub: "Sevilla" },
-  { id: 22, name: "Ethan Nwaneri", position: "Midfielder", age: 18, nationality: "England", number: 53, photoUrl: "/images/players/nwaneri.jpg", bio: "Record‑breaking talent; first PL goal at 17.", joinDate: "2023-07-01", previousClub: "Arsenal Academy" },
+  { id: 19, name: "Mikel Merino", position: "Midfielder", age: 29, nationality: "Spain", number: 23, photoUrl: "/images/MERINO_Headshot_web_zhdm7ct3.avif", bio: "Energetic La Liga box‑to‑box mid since 2024.", joinDate: "2024-08-27", previousClub: "Real Sociedad" },
+  { id: 20, name: "Fábio Vieira", position: "Midfielder", age: 25, nationality: "Portugal", number: 21, photoUrl: "/images/Vieira_1.avif", bio: "Playmaker returning from Porto loan.", joinDate: "2024-07-01", previousClub: "Porto" },
+  { id: 21, name: "Albert Sambi Lokonga", position: "Midfielder", age: 25, nationality: "Belgium", number: 28, photoUrl: "/images/lokonga_.com_headshot.avif", bio: "Loan returner from Sevilla, midfield depth.", joinDate: "2023-07-01", previousClub: "Sevilla" },
+  { id: 22, name: "Ethan Nwaneri", position: "Midfielder", age: 18, nationality: "England", number: 53, photoUrl: "/images/NWANERI_Headshot_web_uqe1axat.avif", bio: "Record‑breaking talent; first PL goal at 17.", joinDate: "2023-07-01", previousClub: "Arsenal Academy" },
 
   // ⚡ Forwards
-  { id: 23, name: "Bukayo Saka", position: "Forward", age: 23, nationality: "England", number: 7, photoUrl: "/images/players/saka.jpg", bio: "Academy gem & consistent attacking force since 2018.", joinDate: "2018-07-01", previousClub: "Arsenal Academy" },
-  { id: 24, name: "Gabriel Martinelli", position: "Forward", age: 24, nationality: "Brazil", number: 11, photoUrl: "/images/players/martinelli.jpg", bio: "Fearless winger with electrifying pace since 2019.", joinDate: "2019-07-02", previousClub: "Ituano" },
-  { id: 25, name: "Gabriel Jesus", position: "Forward", age: 28, nationality: "Brazil", number: 9, photoUrl: "/images/players/jesus.jpg", bio: "Clinically proven striker with top-level experience.", joinDate: "2022-07-04", previousClub: "Manchester City" },
-  { id: 26, name: "Leandro Trossard", position: "Forward", age: 30, nationality: "Belgium", number: 19, photoUrl: "/images/players/trossard.jpg", bio: "Creative winger/forward signed 2023.", joinDate: "2023-07-28", previousClub: "Brighton" },
-  { id: 27, name: "Kai Havertz", position: "Forward", age: 25, nationality: "Germany", number: 29, photoUrl: "/images/players/havertz.jpg", bio: "Big‑money Chelsea forward, signed 2023.", joinDate: "2023-08-10", previousClub: "Chelsea" },
-  { id: 28, name: "Viktor Gyökeres", position: "Forward", age: 27, nationality: "Sweden", number: 30, photoUrl: "/images/players/gyokeres.jpg", bio: "Goal‑machine signed from Sporting Lisbon.", joinDate: "2025-07-12", previousClub: "Sporting CP" },
-  { id: 29, name: "Reiss Nelson", position: "Forward", age: 25, nationality: "England", number: 25, photoUrl: "/images/players/nelson.jpg", bio: "Versatile winger back from Fulham loan.", joinDate: "2017-08-01", previousClub: "Arsenal Academy" },
-  { id: 30, name: "Noni Madueke", position: "Forward", age: 21, nationality: "England", number: 26, photoUrl: "/images/players/madueke.jpg", bio: "Pacey winger signed from Chelsea in 2025.", joinDate: "2025-07-12", previousClub: "Chelsea" }
+  { id: 23, name: "Bukayo Saka", position: "Forward", age: 23, nationality: "England", number: 7, photoUrl: "/images/SAKA_Headshot_web_mxqw4vma.avif", bio: "Academy gem & consistent attacking force since 2018.", joinDate: "2018-07-01", previousClub: "Arsenal Academy" },
+  { id: 24, name: "Gabriel Martinelli", position: "Forward", age: 24, nationality: "Brazil", number: 11, photoUrl: "/images/MARTINELLI_Headshot_web_l7r7lao5.avif", bio: "Fearless winger with electrifying pace since 2019.", joinDate: "2019-07-02", previousClub: "Ituano" },
+  { id: 25, name: "Gabriel Jesus", position: "Forward", age: 28, nationality: "Brazil", number: 9, photoUrl: "/images/Jesus_0.avif", bio: "Clinically proven striker with top-level experience.", joinDate: "2022-07-04", previousClub: "Manchester City" },
+  { id: 26, name: "Leandro Trossard", position: "Forward", age: 30, nationality: "Belgium", number: 19, photoUrl: "/images/TROSSARD_Headshot_web_c75bgy21.avif", bio: "Creative winger/forward signed 2023.", joinDate: "2023-07-28", previousClub: "Brighton" },
+  { id: 27, name: "Kai Havertz", position: "Forward", age: 25, nationality: "Germany", number: 29, photoUrl: "/images/HAVERTZ_Headshot_web_frc1i8l3.avif", bio: "Big‑money Chelsea forward, signed 2023.", joinDate: "2023-08-10", previousClub: "Chelsea" },
+  { id: 29, name: "Reiss Nelson", position: "Forward", age: 25, nationality: "England", number: 25, photoUrl: "/images/Nelson_17.avif", bio: "Versatile winger back from Fulham loan.", joinDate: "2017-08-01", previousClub: "Arsenal Academy" },
 ];
 
 // Utility functions to filter/search
