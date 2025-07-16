@@ -1,6 +1,7 @@
 import React from 'react';
 import PlayerCard from '../components/playercard';
 import { players, getPlayersByPosition } from '../data/players';
+import '../components/Team.css';
 
 const Team = () => {
   const goalkeepers = getPlayersByPosition('Goalkeeper');

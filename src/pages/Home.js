@@ -2,6 +2,7 @@ import React from 'react';
 import { clubInfo } from '../data/clubInfo';
 import { getLatestNews } from '../data/newsArticles';
 import { getUpcomingFixtures } from '../data/fixtures';
+import '../components/Home.css';
 
 const Home = () => {
   const latestNews = getLatestNews(3);
@@ -13,7 +14,7 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-image">
           <img 
-            src="/images/rice-celeb-newcastle_wn6ptksd.avif" 
+            src="/rice-celeb-newcastle_wn6ptksd.jpg"
             alt="Arsenal celebration" 
             className="hero-bg"
           />

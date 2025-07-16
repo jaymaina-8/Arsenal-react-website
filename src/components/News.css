@@ -1,0 +1,129 @@
+.news-page {
+    padding: 60px 20px;
+    background-color: #fdfdfd;
+    font-family: "Chapman", sans-serif;
+    color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ba0c2f;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.news-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #ba0c2f;
+    color: #ba0c2f;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #ba0c2f;
+    color: white;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    padding: 20px;
+    transition: transform 0.2s ease;
+    border-left: 4px solid #ba0c2f;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.news-title {
+    font-size: 20px;
+    margin: 12px 0;
+    color: #111;
+}
+
+.news-summary {
+    font-size: 16px;
+    color: #444;
+}
+
+.news-content {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.news-tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #444;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+.read-more-btn {
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #ba0c2f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #a10a29;
+}
+
+@media screen and (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

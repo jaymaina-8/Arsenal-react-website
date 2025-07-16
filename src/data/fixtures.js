@@ -1,6 +1,5 @@
 // data/fixtures.js
 
-// Convert date strings to proper format and add required fields
 const parseDate = (dateString) => {
   // Convert "Wednesday, 23rd July 2025" to "2025-07-23"
   const months = {
@@ -605,7 +604,7 @@ export const getUpcomingFixtures = (limit = 5) => {
     .slice(0, limit);
 };
 
-export const getRecentResults = (limit = 5) => {
+export const getRecentResults = (limit = 103) => {
   return results
     .filter(result => result.status === 'completed')
     .sort((a, b) => new Date(b.date) - new Date(a.date))

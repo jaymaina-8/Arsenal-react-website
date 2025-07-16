@@ -1,0 +1,143 @@
+.fixtures-page {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    font-family: "Chapman", sans-serif;
+    color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ba0c2f;
+    margin-bottom: 40px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #ba0c2f;
+    border-radius: 30px;
+    background: white;
+    color: #ba0c2f;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: #ba0c2f;
+    color: white;
+}
+
+.fixtures-section h2,
+.results-section h2 {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ba0c2f;
+    padding-bottom: 10px;
+}
+
+.fixtures-list,
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Fixture Cards */
+.fixture-card,
+.result-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Match Info */
+.fixture-date,
+.result-date {
+    font-size: 15px;
+    color: #999;
+}
+
+.fixture-teams,
+.result-teams {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fixture-details,
+.result-details {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Status Styling */
+.fixture-status {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.importance.high {
+    color: #ba0c2f;
+    font-weight: bold;
+}
+
+.importance.medium {
+    color: #e85c00;
+}
+
+.importance.low {
+    color: #777;
+}
+
+.tickets.available {
+    color: green;
+}
+
+.tickets.sold-out {
+    color: red;
+}
+
+/* Results Extras */
+.match-report {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+.scorers {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.home-scorers,
+.away-scorers {
+    margin-top: 4px;
+}

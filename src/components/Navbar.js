@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <Link to="/" className="nav-logo" onClick={closeMenu}>
           <img 
-            src="/images/arsenal-fc-seeklogo.png" 
+            src="/arsenal-fc-seeklogo.jpeg"
             alt="Arsenal FC Logo" 
             className="nav-logo-img"
           />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { clubInfo, history } from '../data/clubInfo';
+import '../components/About.css';
 
 const About = () => {
   return (

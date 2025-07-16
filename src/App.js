@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
 import Home from './pages/Home';
-import About from './pages/about';
-import Contact from './pages/contact';
-import News from './pages/news';
-import Fixtures from './pages/fixtures';
-import Team from './pages/team';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import News from './pages/News';
+import Fixtures from './pages/Fixtures';
+import Team from './pages/Team';
+import './App.css';
 
 function App() {
   return (

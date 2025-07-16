@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-section">
           <div className="footer-logo">
             <img 
-              src="/images/arsenal-fc-seeklogo.png" 
+              src="/arsenal-fc-seeklogo.jpeg"
               alt="Arsenal FC Logo" 
               className="footer-logo-img"
             />

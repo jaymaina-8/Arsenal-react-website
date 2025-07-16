@@ -1,0 +1,85 @@
+.team-page {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    font-family: "Chapman", sans-serif;
+    color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ba0c2f;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.position-section {
+    margin-bottom: 50px;
+}
+
+.position-section h2 {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 20px;
+    border-left: 5px solid #ba0c2f;
+    padding-left: 15px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* PlayerCard component styles (override if needed) */
+.player-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.player-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.player-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ba0c2f;
+}
+
+.player-position {
+    font-size: 15px;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .position-section h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
