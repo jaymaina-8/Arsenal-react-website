@@ -31,6 +31,49 @@ const Home = () => {
           <img src="/adidas-seeklogo.png" alt="Adidas" />
           <img src="/visit-rwanda-seeklogo.png" alt="Visit Rwanda" />
         </div>
+          {/* Spotlight Section: Small Hero + Fixtures Side by Side */}
+          <h2>Trending</h2>
+          <div className="spotlight-grid">
+              {/* Small Hero */}
+              <div className="small-hero">
+                  <img
+                      src="/Getting-to-know-Smith_lyteudb6.avif"
+                      alt="New Recruit"
+                      className="small-hero-img"
+                  />
+                  <div className="small-hero-content">
+                      <h3 className="small-hero-title">Get to Know Smith: Fun facts on our new recruit</h3>
+                      <p className="small-hero-subtitle">Olivia Smith joined as the latest signing of the transfer window.</p>
+                      <button className="hero-cta">Meet Olivia</button>
+                  </div>
+              </div>
+
+              {/* Fixtures */}
+              <section className="fixtures-section spotlight">
+                  <h2 className="section-title">Upcoming Fixtures</h2>
+                  <div className="fixtures-list">
+                      {upcomingFixtures.map(fixture => (
+                          <div key={fixture.id} className="fixture-card">
+                              <div className="fixture-info">
+                                  <div className="fixture-date-time">
+                                      <span className="fixture-date">{fixture.date}</span>
+                                      <span className="fixture-time">{fixture.time}</span>
+                                  </div>
+                                  <div className="fixture-teams">
+                                      <span className="home-team">{fixture.homeTeam}</span>
+                                      <span className="vs">VS</span>
+                                      <span className="away-team">{fixture.awayTeam}</span>
+                                  </div>
+                                  <div className="fixture-details">
+                                      <span className="fixture-venue">{fixture.venue}</span>
+                                      <span className="fixture-competition">{fixture.competition}</span>
+                                  </div>
+                              </div>
+                          </div>
+                      ))}
+                  </div>
+              </section>
+          </div>
 
         {/* Main Grid Layout */}
         <div className="arsenal-main-grid">
@@ -47,32 +90,7 @@ const Home = () => {
                     <h3 className="news-title">{article.title}</h3>
                     <p className="news-summary">{article.summary}</p>
                     <button className="read-more">Read More</button>
-                  </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Upcoming Fixtures */}
-          <section className="fixtures-section">
-            <h2 className="section-title">Upcoming Fixtures</h2>
-            <div className="fixtures-list">
-              {upcomingFixtures.map(fixture => (
-                  <div key={fixture.id} className="fixture-card">
-                    <div className="fixture-info">
-                      <div className="fixture-date-time">
-                        <span className="fixture-date">{fixture.date}</span>
-                        <span className="fixture-time">{fixture.time}</span>
-                      </div>
-                      <div className="fixture-teams">
-                        <span className="home-team">{fixture.homeTeam}</span>
-                        <span className="vs">VS</span>
-                        <span className="away-team">{fixture.awayTeam}</span>
-                      </div>
-                      <div className="fixture-details">
-                        <span className="fixture-venue">{fixture.venue}</span>
-                        <span className="fixture-competition">{fixture.competition}</span>
-                      </div>
-                    </div>
+                      /*!<a href="#" className="read-more">Read More</a>*/
                   </div>
               ))}
             </div>

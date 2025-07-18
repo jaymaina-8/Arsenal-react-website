@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { newsArticles, getNewsByCategory, getLatestNews } from '../data/newsArticles';
 import '../components/News.css';
 
@@ -20,7 +21,7 @@ const News = () => {
     <div className="news-page">
       <div className="container">
         <h1>Arsenal News</h1>
-        
+
         <div className="news-filters">
           {categories.map(category => (
             <button
@@ -43,10 +44,10 @@ const News = () => {
                 </div>
                 <div className="news-author">By {article.author}</div>
               </div>
-              
+
               <h2 className="news-title">{article.title}</h2>
               <p className="news-summary">{article.summary}</p>
-              
+
               {expandedArticle === article.id && (
                 <div className="news-content">
                   <p>{article.content}</p>
@@ -57,13 +58,29 @@ const News = () => {
                   </div>
                 </div>
               )}
-              
+
               <button 
                 className="read-more-btn"
                 onClick={() => toggleArticle(article.id)}
               >
                 {expandedArticle === article.id ? 'Read Less' : 'Read More'}
               </button>
+              <Link 
+                to={`/news/${article.id}`} 
+                className="full-article-link"
+              >
+                Read Full Article
+              </Link>
+              {article.link && (
+                <a 
+                  href={article.link} 
+                  className="external-article-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read More on Arsenal.com
+                </a>
+              )}
             </article>
           ))}
         </div>

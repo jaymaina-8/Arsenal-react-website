@@ -14,7 +14,8 @@ An agreement has now been struck, Fabrizio Romano reports, with Chelsea acceptin
 
 Madueke will now sign a five-year deal to become the sixth player to swap Stamford Bridge for the Emirates during Mikel Arteta's reign in north London.`,
     imageUrl: "/GettyImages-2218942050.webp",
-    tags: ["Transfer", "Noni Madueke", "Chelsea", "Premier League"]
+    tags: ["Transfer", "Noni Madueke", "Chelsea", "Premier League"],
+    link: "https://dailycannon.com/2025/07/madueke-arsenal-contract-signed/"
   },
   {
     id: 2,
@@ -41,7 +42,8 @@ Gyokeres scored 54 goals in 52 appearances for Sporting last season and has been
 
 Arsenal have already been busy in the transfer market this summer with the signings of Martin Zubimendi and Kepa Arrizabalaga, while the capture of Christian Norgaard was announced on Thursday.`,
     imageUrl: "/0_Gyokeres.webp",
-    tags: ["Transfer", "Viktor Gyokeres", "Sporting Lisbon", "Alan Shearer"]
+    tags: ["Transfer", "Viktor Gyokeres", "Sporting Lisbon", "Alan Shearer"],
+    link: "https://www.arsenal.com/news/gyokeres-transfer-approval"
   },
   {
     id: 3,
@@ -60,7 +62,8 @@ The third major addition is Christian Norgaard from Brentford, whose physical pr
 
 These signings demonstrate Arsenal's ambition and commitment to competing at the highest level across all competitions.`,
     imageUrl: "/transfer-window-2025.jpg",
-    tags: ["Transfer", "Zubimendi", "Kepa", "Norgaard", "Summer Window"]
+    tags: ["Transfer", "Zubimendi", "Kepa", "Norgaard", "Summer Window"],
+    link: "https://www.arsenal.com/news/summer-transfer-window-update"
   },
   {
     id: 4,
@@ -77,7 +80,8 @@ Youth players have also been given opportunities to train with the first team, w
 
 Fitness levels are being closely monitored as the players prepare for the upcoming pre-season friendlies and the start of the new Premier League campaign.`,
     imageUrl: "/training-camp-2025.jpg",
-    tags: ["Training", "Pre-Season", "London Colney", "Squad Integration"]
+    tags: ["Training", "Pre-Season", "London Colney", "Squad Integration"],
+    link: "https://www.arsenal.com/news/pre-season-training-camp-update"
   },
   {
     id: 5,
@@ -96,7 +100,8 @@ The manager also emphasized the importance of continuity, with the core of the s
 
 "The foundation is strong, and now we're adding layers that will make us even more competitive. The players understand our philosophy, and the new additions will enhance what we're trying to achieve."`,
     imageUrl: "/arteta-interview-2025.jpg",
-    tags: ["Manager", "Mikel Arteta", "Season Preview", "Tactics"]
+    tags: ["Manager", "Mikel Arteta", "Season Preview", "Tactics"],
+    link: "https://www.arsenal.com/news/arteta-vision-new-season"
   }
 ];
 
@@ -154,7 +159,7 @@ export const getNewsByDateRange = (startDate, endDate) => {
 export const getNewsStats = () => {
   const categories = [...new Set(newsArticles.map(article => article.category))];
   const totalArticles = newsArticles.length;
-  
+
   return {
     totalArticles,
     categories: categories.map(category => ({

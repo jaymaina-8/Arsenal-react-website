@@ -117,13 +117,147 @@ h1 {
     background-color: #a10a29;
 }
 
+.full-article-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.full-article-link:hover {
+    background-color: #222;
+}
+
+.external-article-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px 18px;
+    background-color: #004d98; /* Arsenal blue */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.external-article-link:hover {
+    background-color: #003a75;
+}
+
+/* NewsArticle page styles */
+.news-article-page {
+    padding: 60px 20px;
+    background-color: #fdfdfd;
+    font-family: "Chapman", sans-serif;
+    color: #111;
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.article-title {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #ba0c2f;
+}
+
+.article-image {
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-summary {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.article-tags {
+    margin: 20px 0;
+}
+
+.back-to-news {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ba0c2f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+/* External link in article page */
+.news-article-page .external-article-link {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 12px 24px;
+}
+
+.back-to-news:hover {
+    background-color: #a10a29;
+}
+
+.loading, .article-not-found {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
     .news-grid {
         grid-template-columns: 1fr;
     }
 
-    .news-header {
+    .news-header, .article-header {
         flex-direction: column;
         gap: 4px;
+    }
+
+    .read-more-btn, .full-article-link {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .article-title {
+        font-size: 24px;
+    }
+
+    .article-content {
+        font-size: 15px;
+        line-height: 1.6;
     }
 }
